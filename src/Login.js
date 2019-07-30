@@ -63,8 +63,7 @@ class Login extends Component {
 
     doLogin = async () => {
         infoObj = JSON.stringify(this.infoObj);
-        console.log(infoObj);
-        const response = await fetch("https://jacobsladderapi.herokuapp.com/userlogin",{
+        const response = await fetch(url,{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
