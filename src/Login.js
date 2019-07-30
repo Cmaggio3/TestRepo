@@ -65,7 +65,7 @@ class Login extends Component {
         infoObj = JSON.stringify(this.infoObj);
         const response = await fetch("https://jacobsladder.herokuapp.com/userlogin",{
             method: 'POST',
-            mode: 'cors',
+            crossDomain: true,
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
